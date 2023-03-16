@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Project |Tim Personal Project 1</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location"></i>
+            <div class="autocomplete">
+              <input  type="text" name='myLocation' id="myInput" placeholder="Enter Your Location" autocomplete="off">
+            </div>
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        <div class="image-container">
+            <img src="./Images/clear.png" class="image">
+        </div>
+        <div class="weather-box">
+                <div class="weather-info__location">
+                    <h1 class="Location">Location</h1>
+                    <p >Location</p>
+                </div>
+                <div class="weather-info__temp">
+                    <h1 class="Temeprature">Weather</h1>
+                    <p >Temperature</p>
+                </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+
+    <script>
+      autocomplete(document.getElementById("myInput"), city);
+      expandContainer();
+    </script>
+  </body>
+</html>

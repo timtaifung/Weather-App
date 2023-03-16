@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #072448;
+}
+
+.container {
+    height: 105px;
+    width: 600px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 32px;
+    font-family: "Roboto", sans-serif;
+    transition: 0.6s ease-in;
+}
+
+.container-expand {
+    height: 485px;
+    width: 600px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 32px;
+    font-family: "Roboto", sans-serif;
+    transition: 0.6s ease-in;
+}
+
+.search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.autocomplete {
+    z-index: 1;
+    width: 80%;
+    position: relative;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 5%;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+.search-box input {
+    width: 100%;
+    color: #072448;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+
+.search-box button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #06283D;
+    font-size: 22px;
+    transition: 0.4s ease;
+
+}
+
+.search-box button:hover {
+    color: #fff;
+    background: #072448;
+}
+
+.search-box i {
+    position: absolute;
+    color: #072448;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.image-container{
+    visibility:hidden;
+    width: 100%;
+    height: 45%;
+    border-radius: 50%;
+    display: flex;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container-visible{
+    visibility: visible;
+    width: 100%;
+    height: 45%;
+    border-radius: 50%;
+    display: flex;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    transition:step-end 0.8s;
+}
+
+.weather-box{
+    visibility: hidden;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-container-visible{
+    visibility: visible;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s ease-in;
+}
+.image{
+    width: 50%;
+    height: min-content;
+    object-fit: cover;
+}
