@@ -9,40 +9,111 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Weather Project |Tim Personal Project 1</title>
+    <title>SMU Hackerthon</title>
   </head>
   <body>
-
     <div class="container">
-        <div class="search-box">
-            <i class="fa-solid fa-location"></i>
-            <div class="autocomplete">
-              <input  type="text" name='myLocation' id="myInput" placeholder="Enter Your Location" autocomplete="off">
-            </div>
-            <button class="fa-solid fa-magnifying-glass"></button>
-        </div>
-        <div class="image-container">
-            <img src="./Images/clear.png" class="image">
-        </div>
-        <div class="weather-box">
-                <div class="weather-info__location">
-                    <h1 class="Location">Location</h1>
-                    <p >Location</p>
-                </div>
-                <div class="weather-info__temp">
-                    <h1 class="Temeprature">Weather</h1>
-                    <p >Temperature</p>
-                </div>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/7c8801c017.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
+      <div class="mountain-box">
+        <div class="mountain">
+          <div class="con-1 main-con" style="margin-left: 0px;">
+            <!--<img src="/Images/poop.png" class="cali1" alt="" />-->
+            <div class="container">
 
+              <a href="#" class="button">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">WHAT IS INCOME TAX</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </a>
+            
+            </div>
+          </div>
+          <div class="con-2 main-con" style="margin-right: 20px;">
+            <!-- <img src="/Images/cali.png" class="cali1" alt="" /> -->
+            <div class="container">
+
+              <a href="#" class="button">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">SUBMITTING AN APPEAL</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </a>
+            
+            </div>
+          </div>
+          <div class="text">
+            <div class="logo-head">
+              <h2>CauliLaw</h2>
+            </div>
+            <div class="logo-byline">
+              <h4>Justice for All. Advocating Your Rights</h4>
+            </div>
+          </div>
+          <div class="con-3 main-con"  onclick="location.href='taxjourney.html'">
+            <!-- <img src="/Images/tellie.png" class="cali1" alt="" /> -->
+            <div class="container">
+
+              <a href="taxjourney2.html" class="button">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">INCOME TAX JOURNEY</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </a>
+            
+            </div>
+          </div>
+          <div class="con-4 main-con">
+            <!-- <img src="/Images/news.png" class="cali1" alt="" /> -->
+            <div class="container">
+
+              <a href="#" class="button">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">LATEST NEWS</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </a>
+            
+            </div>
+          </div>
+          
+        </div>
+      </div>
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="How May I Help You...">
+          </div>
+          <div class="result" id="result" onclick="location.href='taxjourney2.html'">
+            <blockquote class="q-card q-card-color-1">
+              <div class="content">Introduction to Income Tax</div>
+              <div class='author'>John Doe</div>
+            </blockquote>
+            <blockquote class="q-card q-card-color-1">
+              <div class="content">Income Tax vs Other types of tax</div>
+              <div class='author'>John Doe</div>
+            </blockquote>
+            <blockquote class="q-card q-card-color-1">
+              <div class="content">Tax Evasion and its penalties</div>
+              <div class='author'>John Doe</div>
+            </blockquote>
+          </div>
+
+    </div>
+    <script src="app.js"></script>
     <script>
-      autocomplete(document.getElementById("myInput"), city);
-      expandContainer();
+        const checker=document.getElementById("result");
+        document.querySelector(".input-search").addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                document.getElementById("result").style.visibility='visible';
+            }
+        });
+        document.querySelector(".funny").addEventListener("click", function(event) {
+          document.getElementById("funny").style.visibility='hidden';
+          document.getElementById("jail").style.visibility='visible';
+        });
     </script>
   </body>
 </html>
