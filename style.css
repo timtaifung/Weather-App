@@ -18,6 +18,7 @@
     background-image: url(/Images/background.jpg);
     font-family: 'Lato' !important;
   }
+  
   .bg{
     --size: 250px;
     --speed: 50s;
@@ -518,11 +519,12 @@ blockquote.q-card > .author::before{
   line-height: 60px;
 }
 
-.card {
+.card1 {
   background: transparent;
   max-width: 550px;
   border: 0;
-  width: 100%;
+  width: 67%;
+  height: 130px;
   margin-inline: auto;
 }
 
@@ -533,9 +535,11 @@ blockquote.q-card > .author::before{
   background-clip: padding-box;
   border-radius: 45px;
   padding: 40px;
+  height: 350px;
   img {
     margin-bottom: 32px;
   }
+  
 }
 
 .bg-green-box,
@@ -593,3 +597,55 @@ blockquote.q-card > .author::before{
   max-width: 470px;
 }
 
+
+
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+.card {
+  max-width: 300px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 500px;
+  height: 40px;
+  padding: 35px;
+  width:270px;
+  text-align: center;
+
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.card-footer {
+  font-size: 0.65em;
+  color: #446;
+}
