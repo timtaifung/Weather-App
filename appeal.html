@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SMU Hackerthon</title>
+    <style>
+        .container-card {
+            height: 500px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="mountain-box">
+          <div class="mountain">
+            <div class="con-1 main-con" style="margin-left: 0px;">
+              <!-- <img src="/Images/personal.png" class="cali1" alt="" /> -->
+              <div class="container">
+  
+                <a href="#" class="button">
+                  <div class="button__line"></div>
+                  <div class="button__line"></div>
+                  <span class="button__text">WHAT IS INCOME TAX</span>
+                  <div class="button__drow1"></div>
+                  <div class="button__drow2"></div>
+                </a>
+              
+              </div>
+            </div>
+            <div class="con-2 main-con" style="margin-right: 20px;">
+              <!-- <img src="/Images/cali.png" class="cali1" alt="" /> -->
+              <div class="container">
+  
+                <a href="#" class="button">
+                  <div class="button__line"></div>
+                  <div class="button__line"></div>
+                  <span class="button__text">SUBMITTING AN APPEAL</span>
+                  <div class="button__drow1"></div>
+                  <div class="button__drow2"></div>
+                </a>
+              
+              </div>
+            </div>
+            <div class="text">
+              <div class="logo-head">
+                <h2>CauliLaw</h2>
+              </div>
+              <div class="logo-byline">
+                <h4>Justice for All. Advocating Your Rights</h4>
+              </div>
+            </div>
+            <div class="con-3 main-con"  onclick="location.href='taxjourney.html'">
+              <!-- <img src="/Images/tellie.png" class="cali1" alt="" /> -->
+              <div class="container">
+  
+                <a href="taxjourney2.html" class="button">
+                  <div class="button__line"></div>
+                  <div class="button__line"></div>
+                  <span class="button__text">INCOME TAX JOURNEY</span>
+                  <div class="button__drow1"></div>
+                  <div class="button__drow2"></div>
+                </a>
+              
+              </div>
+            </div>
+            <div class="con-4 main-con">
+              <!-- <img src="/Images/news.png" class="cali1" alt="" /> -->
+              <div class="container">
+  
+                <a href="#" class="button">
+                  <div class="button__line"></div>
+                  <div class="button__line"></div>
+                  <span class="button__text">LATEST NEWS</span>
+                  <div class="button__drow1"></div>
+                  <div class="button__drow2"></div>
+                </a>
+              
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="content-card" style="height: 200px;">
+            <img src="/Images/claim.jpg" alt="">
+        </div>
+      
+    <script src="app.js"></script>
+    <script>
+        const checker=document.getElementById("result");
+        document.querySelector(".input-search").addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                document.getElementById("result").style.visibility='visible';
+            }
+        });
+    </script>
+  </body>
+</html>
